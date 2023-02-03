@@ -213,3 +213,6 @@ fabric.properties
 # https://plugins.jetbrains.com/plugin/8053-azure-toolkit-for-intellij
 
 # End of https://www.toptal.com/developers/gitignore/api/webstorm,intellij,go
+
+.idea
+.DS_Store
