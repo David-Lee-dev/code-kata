@@ -1,0 +1,9 @@
+func runningSum(nums []int) []int {
+    for index, num := range nums {
+        if index == 0 { continue }
+
+        nums[index] = num + nums[index - 1]
+    }
+
+    return nums
+}

@@ -1,0 +1,9 @@
+func smallestEqual(nums []int) int {
+	for index, num := range nums {
+		if index%10 == num {
+			return index
+		}
+	}
+
+	return -1
+}
