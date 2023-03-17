@@ -3,13 +3,14 @@ import express, { Express, Request, Response } from 'express';
 import morgan from 'morgan';
 
 const app: Express = express();
-const port = 4000;
+const port = 4010;
 
 app.use(morgan('combined'));
 app.use(bodyParser.json());
 
-app.get('/', (req: Request, res: Response) => {
+app.get('/test', (req: Request, res: Response) => {
   const data = { data: 'data' };
+  res.append('test', 'test');
   res.status(200).send(data);
 });
 
