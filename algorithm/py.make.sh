@@ -6,8 +6,8 @@ read url
 
 cat << EOF > "$filename".py
 \`\`\`python3
-// $filename
-// $url
+# $filename
+# $url
 
 
 \`\`\`
