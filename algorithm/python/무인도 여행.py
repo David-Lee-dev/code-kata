@@ -1,4 +1,3 @@
-```python3
 # 무인도 여행
 # https://school.programmers.co.kr/learn/courses/30/lessons/154540
 
@@ -50,4 +49,3 @@ def solution(maps):
             answer.append(check(matrix, r, c, ROW, COL))
 
     return sorted(answer) if answer else [-1]
-```

@@ -5,12 +5,10 @@ echo "Enter url"
 read url
 
 cat << EOF > "$filename".py
-\`\`\`python3
 # $filename
 # $url
 
 
-\`\`\`
 EOF
 
 mv "$filename.py" python/

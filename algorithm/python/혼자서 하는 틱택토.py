@@ -1,4 +1,3 @@
-```python3
 # 혼자서 하는 틱택토
 # https://school.programmers.co.kr/learn/courses/30/lessons/160585#
 
@@ -85,4 +84,3 @@ def solution(board):
         return 0
 
     return 1
-```

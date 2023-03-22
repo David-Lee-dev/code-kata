@@ -1,4 +1,3 @@
-```python3
 # 리코쳇 로봇
 # https://school.programmers.co.kr/learn/courses/30/lessons/169199#
 
@@ -65,5 +64,3 @@ def solution(board):
                 board[tmp_r][tmp_c] = CHECKED
 
     return -1
-
-```

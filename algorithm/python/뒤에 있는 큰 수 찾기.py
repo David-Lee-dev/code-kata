@@ -1,4 +1,3 @@
-```python3
 # 뒤에 있는 큰 수 찾기
 # https://school.programmers.co.kr/learn/courses/30/lessons/154539?language=python3
 
@@ -35,4 +34,3 @@ def solution(numbers):
         answer[idx] = find(idx, numbers, answer, length)
 
     return answer
-```
