@@ -10,4 +10,4 @@ These projects is that I following some example projects before development
 |---------------------------------------|------------------------------------------------------------------------------------|
 | Flutter UI practice                   | [link](https://github.com/David-Lee-dev/code-kata/tree/main/test-example/toonflix) |
 | proxy-server-practice with express.js | [link](https://github.com/David-Lee-dev/code-kata/tree/main/test-example/express-proxy-server-example)|
-| drf tutorial                          |https://github.com/David-Lee-dev/code-kata/tree/main/test-example/drf-tutorial|
+| drf tutorial                          |[link](https://github.com/David-Lee-dev/code-kata/tree/main/test-example/drf-tutorial)|
