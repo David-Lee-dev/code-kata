@@ -84,19 +84,19 @@ def make_school_map(schools):
 
         if result.get(name):
             result[name + '_2'] = {
-                'code': code,
-                'address_code': address_code,
-                'old_address': old_address,
-                'new_address': new_address,
-                'name': name
+                'schoolCode': code,
+                'addressCode': address_code,
+                'oldAddress': old_address,
+                'newAddress': new_address,
+                'schoolName': name
             }
         else:
             result[name] = {
-                'code': code,
-                'address_code': address_code,
-                'old_address': old_address,
-                'new_address': new_address,
-                'name': name
+                'schoolCode': code,
+                'addressCode': address_code,
+                'oldAddress': old_address,
+                'newAddress': new_address,
+                'schoolName': name
             }
 
     return result
