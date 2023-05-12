@@ -17,7 +17,7 @@ with open('special.json', 'r') as f:
 with open('etc.json', 'r') as f:
     etc = json.load(f)
 
-data = middle['body'] + high['body'] + special['body'] + etc['body']
+data = high['body'] + special['body'] + etc['body']
 
 
 def add_to_tree(tree, word, flag):
@@ -105,8 +105,8 @@ def make_school_map(schools):
 name_map = build_tree(data)
 school_map = make_school_map(data)
 
-with open('name_map.json', 'w', encoding='utf-8') as f:
+with open('school_name_search_map.json', 'w', encoding='utf-8') as f:
     json.dump({k.encode('utf-8').decode('utf-8'): v for k, v in name_map.items()}, f, ensure_ascii=False)
 
-with open('school_map.json', 'w', encoding='utf-8') as f:
+with open('school_info_map.json', 'w', encoding='utf-8') as f:
     json.dump({k.encode('utf-8').decode('utf-8'): v for k, v in school_map.items()}, f, ensure_ascii=False)
