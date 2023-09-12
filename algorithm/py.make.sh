@@ -14,13 +14,12 @@ select source in "${allowed_sources[@]}"; do
   fi
 done
 
-cat << EOF > "$filename".py
-# $filename
-# $url
-# $source
+if [ "$source" == "swea" ]; then
+  destination="python/$source/$filename"
+  mkdir -p "$destination"
+else
+  destination="python/$source"
+fi
 
-EOF
-
-destination="python/$source/$filename"
-mkdir -p "$destination"
-mv "$filename.py" "$destination/$filename.py"
+cat << EOF > "$destination/$filename.py"
+echo "File created at $destination/$filename.py"
