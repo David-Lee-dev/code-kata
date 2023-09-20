@@ -22,7 +22,6 @@ def solution(order):
             answer += 1
         else:
             if sub and sub[-1] == now:
-            if sub and sub[-1] == now:
                 sub.pop()
                 answer += 1
             elif now in sub:
