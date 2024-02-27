@@ -4,7 +4,7 @@ read filename
 echo "Enter url"
 read url
 
-allowed_sources=("programmers" "swea")
+allowed_sources=("programmers" "swea" "beakjoon")
 echo "Select a source (options: ${allowed_sources[*]}):"
 select source in "${allowed_sources[@]}"; do
   if [[ " ${allowed_sources[*]} " == *" $source "* ]]; then
@@ -22,4 +22,10 @@ else
 fi
 
 cat << EOF > "$destination/$filename.py"
-echo "File created at $destination/$filename.py"
+# $filename
+# $url
+
+from sys import stdin
+stdin.readline()
+
+EOF
