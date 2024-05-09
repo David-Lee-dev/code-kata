@@ -32,7 +32,6 @@ def dijkstra(start):
             if result[nxt_node] == -1 or result[nxt_node] > total_cost:
                 result[nxt_node] = total_cost
                 heappush(q, (total_cost, nxt_node))
-    print(result)
     return result
 
 
@@ -40,7 +39,7 @@ def calc(result):
     total = 0
 
     for i in range(1, n + 1):
-        if result[i] <= m:
+        if 0 <= result[i] <= m:
             total += items[i - 1]
 
     return total
